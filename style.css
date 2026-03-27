@@ -1,0 +1,180 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-sizing: border-box;
+}
+
+body{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-image:url(vecteezy_dramatic-sunset-over-ocean-waves-crashing-on-rocky-beach_74104444.jpeg);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+}
+
+.container{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: transform 1.17s ease-in-out;
+
+}
+
+.container:hover{
+
+    transform:  scale(1.15);
+}
+.weather-card{
+
+    text-align: center;
+    width: 355px;
+    padding: 25px;
+    
+    color:black;
+    background: rgba(255, 255, 255, 0.18);
+  border: 3px, solid rgba(255, 255, 255, 0.28); 
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  /* transition:  all 0.5s ease; */
+  animation: ani 1.2s ease infinite;
+  
+}
+
+@keyframes ani {
+
+    0%{
+
+        transform: translateY(0);
+    }
+
+    50%{
+
+        transform: translateY(-10px);
+    }
+
+    100%{
+
+        transform: translateY(0);
+    }
+    
+}
+
+/* .weather-card :hover{
+
+    transform: translateY(-8px) scale(1.02);
+} */
+
+.sun{
+
+    margin-bottom:20px;
+    margin-right: 30px;
+}
+
+.search{
+
+     display:flex;
+     gap: 5px;
+     margin-bottom:20px;
+     margin-left: 20px;
+     
+
+}
+
+.search input{
+
+    padding:8px;
+    border:none;
+    border-radius:10px;
+   outline: none;
+   margin-left: 10px;
+}
+
+p{
+
+    margin-top: 15px;
+}
+
+.search-icon{
+
+ 
+  background: rgba(255,255,255,0.25);
+    border: none;
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+}
+.search-icon :hover{
+
+    transform: scale(1.1);
+    /* background: #ffffff; */
+}
+
+.box h1{
+
+    font-size: 25px;
+
+    
+}
+
+#temp{
+   
+    margin: 10px 0;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow:0 0 15px rgba(255,255,255,0.6);
+}
+
+.inner{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.inner:hover{
+
+    transform: translateY(-5px) scale(1.1);
+}
+
+.humidity{
+
+    background: rgba(255,255,255,0.25);
+    width:45%;
+    padding:10px;
+     border-radius:12px;
+     
+}
+
+.humidity p{
+
+    font-size:18px;
+  font-weight:bold;
+}
+
+.wind{
+
+    background: rgba(255,255,255,0.25);
+    width:45%;
+    padding:10px;
+     border-radius:12px;
+}
+
+.wind p{
+
+    font-size:18px;
+  font-weight:bold;
+
+
+}
