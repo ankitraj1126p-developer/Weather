@@ -14,7 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  background-image:url(vecteezy_dramatic-sunset-over-ocean-waves-crashing-on-rocky-beach_74104444.jpeg);
+  background-image: url("IMAGE/vecteezy_dramatic-sunset-over-ocean-waves-crashing-on-rocky-beach_74104444.jpeg");
   background-repeat:no-repeat;
   background-attachment: fixed;
   background-position: center;

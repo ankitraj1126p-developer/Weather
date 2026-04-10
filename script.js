@@ -41,19 +41,20 @@ async function getWeather() {
         const weather = data.weather[0].main;
 
 if(weather === "Rain"){
-document.body.style.backgroundImage = "url('rainfall.jpg')";
+    
+document.body.style.backgroundImage = "url('IMAGE/rainfall.jpg')";
 }
 
 else if(weather === "Snow"){
-document.body.style.backgroundImage = "url('snowfall.jpg')";
+document.body.style.backgroundImage = "url('IMAGE/snowfall.jpg')";
 }
 
 else if(weather === "Clear"){
-document.body.style.backgroundImage = "url('sunny 1.jpg')";
+document.body.style.backgroundImage = "url('IMAGE/sunny 1.jpg')";
 }
 
 else if(weather === "Clouds"){
-document.body.style.backgroundImage = "url('cloudy.jpg')";
+document.body.style.backgroundImage = "url('IMAGE/cloudy.jpg')";
 }
            
 
